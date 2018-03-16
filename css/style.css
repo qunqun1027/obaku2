@@ -1,0 +1,551 @@
+@charset utf-8;
+/********공통스타일*****************/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+/*    display: block;*/
+    text-decoration: none;
+    color: #fff;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0
+}
+
+a:hover {
+    font-weight: bold;
+    color: #ECEFF1;
+    text-decoration: none;
+}
+
+/***********header********************/
+
+page {
+    position: relative;
+}
+
+header {
+    top: 0;
+    width: 100%;
+    position: relative;
+    height: 110px;
+    background: #141F35;
+    color: 000;
+    
+   
+}
+#innerhead{
+    position: relative;
+    width: 100%;
+    position: fixed;
+    z-index: 100000;
+    height: 110px;
+    background: #141F35;
+}
+
+ .logo img {
+    width: 10%;
+    position: absolute;
+    left: 45%;
+    margin-top: 1%;
+
+}
+
+#gnb {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 35%;
+    font-size: 16px;
+    
+
+
+}
+
+#gnb li {
+    position: absolute;
+    bottom: 0px;
+
+/*    border: 1px solid red;*/
+    }
+#gnb li a{
+/*    border: 1px solid red;*/
+}
+
+#gnb li:nth-child(1) {
+    left: 5%;
+}
+
+#gnb li:nth-child(2) {
+    left: 15%;
+}
+
+#gnb li:nth-child(3) {
+    left: 22%;
+}
+
+#gnb li:nth-child(4) {
+    right: 20%;
+}
+
+#gnb li:nth-child(5) {
+    right: 13%;
+}
+
+#gnb li:nth-child(6) {
+    right: 5%;
+}
+
+/*************two_depth 메뉴*************/
+.two_depthbox{
+    width: 1400px;
+    position: absolute;
+    height:600px;
+    border: 5px solid #F08714;
+    display: none;
+    opacity: 1;
+    background: #fff;
+}
+.shop{
+    position: absolute;
+    left: 45%;
+    width: 10%;
+    bottom: 10%;
+    background: #141F35;
+    color: white;
+    padding: 10px;
+    text-align: center;
+ 
+/*    z-index: 99;*/
+   
+}
+#two_depth1{
+    width: 100%;
+    height: auto;
+    color: 000;
+    position: absolute;
+    left: 2%;   
+}
+#two_depht1 img{
+    width: 100%;
+    border: 1px solid red;
+    
+   
+}
+#two_depth2{
+    display: none;
+    width: 100%;
+    height: auto;
+    background: yellow;
+    color: 000;
+    position: absolute;
+}
+#two_depth3,#two_depth4,#two_depth5,#two_depth6{
+    display: none;
+}
+
+/***************main************************/
+
+.main {
+    width: 100%;
+    height: 100%;
+   
+
+}
+
+/***************main_slider************************/
+
+.main_logo {
+    position: absolute;
+    left: 20%;
+    top: 10%;
+}
+
+.main_logo img {
+    padding: 10%;
+    width: 70%;
+    height: auto;
+}
+.carousel-inner {
+    position: relative;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    line-height: 1;
+}
+.item{
+    position: absolute;
+}
+.container{
+    position: absolute;
+ 
+/*    position: fixed;*/
+
+}
+.carousel-caption {
+    width: 50%;
+    left: 5%!important;
+    bottom: 10%!important;
+    position: absolute;
+}
+
+.carousel-caption h1,
+.carousel-caption p {
+    color: #37474F;
+
+}
+
+.carousel-caption p {
+    font-size: 2em;
+    border: 1px solid #37474F;
+    width: 30%;
+    margin-left: 30%;
+    padding: 5px;
+    margin-top: 5%;
+}
+
+.carousel-control.right,
+.carousel-control.left {
+    background-image: none;
+}
+
+.carousel-indicators li {
+    border: 1px solid #000;
+    background-color: #37474F;
+    transition: 0.1s;
+}
+
+
+
+/***********collection box***********************/
+
+#gender{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: relative;
+}
+#women_watch{
+    float: left;
+    width: 50%;
+    position: relative;
+/*    border: 1px solid red;*/
+    
+}
+#women_watch img{
+    width: 80%;
+    display: block;
+    border-radius: 20px;
+}
+
+#women_watch:hover .overlay_one{
+    opacity: 0.8;
+    
+}
+#women_watch:hover.text{
+    font-size: 40px;
+}
+
+.overlay_one{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 80%;
+  opacity: 0;
+  transition: .5s ease;
+  background: #F08714;
+  border-radius: 20px;
+}
+.overlay_one .text a{
+    border: 1px solid black;
+    display: block;
+    color: black;
+    padding: 30px;
+    font-weight: bold;
+    
+}
+ 
+
+#man_watch{
+    float: right;
+    width: 50%;
+    position: relative;
+    border: 1px soild red;
+}
+#man_watch img{
+    width: 80%;
+    display: block;
+    border-radius: 20px;
+}
+
+.overlay_two{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 80%;
+  opacity: 0;
+  transition: .5s ease;
+  background: #141F35;
+  border-radius: 20px;
+}
+.overlay_two .text a{
+    border: 1px solid #F08714;
+    display: block;
+    color: #F08714;
+    padding: 30px 60px;
+    font-weight: bold;
+    
+    
+}
+ 
+#man_watch:hover .overlay_two{
+    opacity: 0.8;
+    
+}
+
+/*********content_01************/
+
+.content_01 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.title {
+    width: 100%;
+    height: 30%;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.title > h1 {
+    width: 25%;
+    margin-left: 40%;
+    margin-bottom: 20px;
+}
+
+.title > h3 {
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+#containerbox {
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+}
+
+
+/**************bxslider_img box**********************/
+.prodoct_slider{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+/*    border: 1px solid red;*/
+    z-index: 999;
+}
+.bxslider li img {
+    width: 100%;
+    height: auto;
+}
+
+.bx-wrapper {
+    -webkit-box-shadow: none;
+}
+
+.bx-wrapper .bx-pager {
+    display: none;
+}
+/****life imgs****/
+#inlife{
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container_life_images {
+  position: relative;
+  width: 25%;
+  float: left;
+  margin-bottom: 50px;
+  
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+
+}
+
+.overlay_three {
+  position: absolute;
+  top: 0;  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #141F35;
+}
+
+.container_life_images:hover .overlay_three {
+  opacity: 0.8;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/******title**********/
+.content_1,
+.content_2,
+.content_3 {
+    width: 33%;
+    float: left;
+    margin-left: 3px;
+}
+.content_1 a > img,
+.content_2 a > img,
+.content_3 a > img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+    display: block;
+
+
+}
+
+#menubtn {
+    display: none;
+}
+
+
+
+/*  휴대폰(599px 이하) */
+
+@media screen and (max-width: 599px) {
+    #menubtn {
+        display: block;
+        z-index: 999;
+        position: absolute;
+        left: 2%;
+        top: 10%;
+        font-size: 2em;
+        border-radius: 5px;
+        color: #fff;
+
+
+    }
+    header {
+        height: 70px;
+    }
+    header ul {
+        display: none;
+    }
+    .carousel-caption h1,
+    .carousel-caption p {
+        font-size: 14px;
+
+    }
+    .title h1 {
+        font-size: 16px;
+        width: 40%;
+    }
+    .title h3 {
+        font-size: 14px;
+    }
+    /*
+            .prodoct_slider{
+                width: 100%;
+                border: 1px solid red;
+                
+            }
+*/
+    .content_1,
+    .content_2,
+    .content_3 {
+        width: 33%;
+        float: left;
+        margin-left: 3px;
+
+
+    }
+}
+
+/* 1000px 이하*/
+
+@media screen and (max-width: 1000px) {
+    header {
+        height: 80px;
+    }
+    #gnb {
+        background: #ccc;
+        width: 100%;
+        height: 40px;
+        position: relative;
+        bottom: 0;
+
+    }
+    #gnb li {
+        margin-bottom: 1%;
+        margin-left: 25%;
+
+    }
+    #gnb li:nth-child(4) {
+        left: 27%;
+    }
+    #gnb li:nth-child(5) {
+        left: 35%;
+    }
+    #gnb li:nth-child(6) {
+        left: 43%;
+    }
+    #gnb li a {
+        color: #666;
+        font-size: 14px;
+
+    }
+
+
+}
+/*************footer*****************/
+.fl_center{
+    width: 100%;
+    text-align: center;
+    
+}
