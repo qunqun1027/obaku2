@@ -26,137 +26,12 @@ body {
 }
 
 a:hover {
-    font-weight: bold;
     color: #ECEFF1;
     text-decoration: none;
 }
 
 /***********header********************/
 
-page {
-    position: relative;
-}
-
-header {
-    top: 0;
-    width: 100%;
-    position: relative;
-    height: 110px;
-    background: #141F35;
-    color: 000;
-    
-   
-}
-#innerhead{
-    position: relative;
-    width: 100%;
-    position: fixed;
-    z-index: 100000;
-    height: 110px;
-    background: #141F35;
-}
-
- .logo img {
-    width: 10%;
-    position: absolute;
-    left: 45%;
-    margin-top: 1%;
-
-}
-
-#gnb {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 35%;
-    font-size: 16px;
-    
-
-
-}
-
-#gnb li {
-    position: absolute;
-    bottom: 0px;
-
-/*    border: 1px solid red;*/
-    }
-#gnb li a{
-/*    border: 1px solid red;*/
-}
-
-#gnb li:nth-child(1) {
-    left: 5%;
-}
-
-#gnb li:nth-child(2) {
-    left: 15%;
-}
-
-#gnb li:nth-child(3) {
-    left: 22%;
-}
-
-#gnb li:nth-child(4) {
-    right: 20%;
-}
-
-#gnb li:nth-child(5) {
-    right: 13%;
-}
-
-#gnb li:nth-child(6) {
-    right: 5%;
-}
-
-/*************two_depth 메뉴*************/
-.two_depthbox{
-    width: 1400px;
-    position: absolute;
-    height:600px;
-    border: 5px solid #F08714;
-    display: none;
-    opacity: 1;
-    background: #fff;
-}
-.shop{
-    position: absolute;
-    left: 45%;
-    width: 10%;
-    bottom: 10%;
-    background: #141F35;
-    color: white;
-    padding: 10px;
-    text-align: center;
- 
-/*    z-index: 99;*/
-   
-}
-#two_depth1{
-    width: 100%;
-    height: auto;
-    color: 000;
-    position: absolute;
-    left: 2%;   
-}
-#two_depht1 img{
-    width: 100%;
-    border: 1px solid red;
-    
-   
-}
-#two_depth2{
-    display: none;
-    width: 100%;
-    height: auto;
-    background: yellow;
-    color: 000;
-    position: absolute;
-}
-#two_depth3,#two_depth4,#two_depth5,#two_depth6{
-    display: none;
-}
 
 /***************main************************/
 
@@ -235,7 +110,7 @@ header {
 /***********collection box***********************/
 
 #gender{
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
@@ -243,13 +118,14 @@ header {
 }
 #women_watch{
     float: left;
-    width: 50%;
+    width: 40%;
     position: relative;
+    margin-left: 5%;
 /*    border: 1px solid red;*/
     
 }
 #women_watch img{
-    width: 80%;
+    width: 100%;
     display: block;
     border-radius: 20px;
 }
@@ -269,7 +145,7 @@ header {
   left: 0;
   right: 0;
   height: 100%;
-  width: 80%;
+  width: 100%;
   opacity: 0;
   transition: .5s ease;
   background: #F08714;
@@ -287,12 +163,14 @@ header {
 
 #man_watch{
     float: right;
-    width: 50%;
+    width: 40%;
     position: relative;
-    border: 1px soild red;
+    margin-right: 5%;
+    
+    
 }
 #man_watch img{
-    width: 80%;
+    width: 100%;
     display: block;
     border-radius: 20px;
 }
@@ -304,7 +182,7 @@ header {
   left: 0;
   right: 0;
   height: 100%;
-  width: 80%;
+  width: 100%;
   opacity: 0;
   transition: .5s ease;
   background: #141F35;
@@ -459,43 +337,32 @@ header {
 /*  휴대폰(599px 이하) */
 
 @media screen and (max-width: 599px) {
-    #menubtn {
-        display: block;
-        z-index: 999;
-        position: absolute;
-        left: 2%;
-        top: 10%;
-        font-size: 2em;
-        border-radius: 5px;
-        color: #fff;
-
-
-    }
-    header {
-        height: 70px;
-    }
-    header ul {
-        display: none;
-    }
     .carousel-caption h1,
     .carousel-caption p {
-        font-size: 14px;
-
+    font-size: 14px;
+    }
+    #women_watch,#man_watch{
+        width: 100%;   
+    }
+    #women_watch img,#man_watch img{
+        border-radius: 0;
+        
+    }
+    
+    #women_watch{margin-left: 0;}
+    #man_watch{margin-right: 0;}
+    .overlay_one, .overlay_two{
+        border-radius: 0;
     }
     .title h1 {
         font-size: 16px;
         width: 40%;
+        
     }
     .title h3 {
         font-size: 14px;
     }
-    /*
-            .prodoct_slider{
-                width: 100%;
-                border: 1px solid red;
-                
-            }
-*/
+
     .content_1,
     .content_2,
     .content_3 {
@@ -507,42 +374,6 @@ header {
     }
 }
 
-/* 1000px 이하*/
-
-@media screen and (max-width: 1000px) {
-    header {
-        height: 80px;
-    }
-    #gnb {
-        background: #ccc;
-        width: 100%;
-        height: 40px;
-        position: relative;
-        bottom: 0;
-
-    }
-    #gnb li {
-        margin-bottom: 1%;
-        margin-left: 25%;
-
-    }
-    #gnb li:nth-child(4) {
-        left: 27%;
-    }
-    #gnb li:nth-child(5) {
-        left: 35%;
-    }
-    #gnb li:nth-child(6) {
-        left: 43%;
-    }
-    #gnb li a {
-        color: #666;
-        font-size: 14px;
-
-    }
-
-
-}
 /*************footer*****************/
 .fl_center{
     width: 100%;
